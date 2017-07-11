@@ -17,7 +17,6 @@ describe('TodoApp', () => {
 
     todoApp.setState({todos: []});
     todoApp.handleAddTodo(todoText);
-
     expect(todoApp.state.todos[0].text).toBe(todoText);
 
   });
