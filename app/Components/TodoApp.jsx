@@ -12,9 +12,7 @@ var TodoApp = React.createClass({
     return {
       showCompleted: false,
       searchText: '',
-      todos: TodoAPI.getTodos(),
-      createdAt: moment().unix(),
-      completedAt: undefined
+      todos: TodoAPI.getTodos()
     };
   },
   componentDidUpdate: function() {
